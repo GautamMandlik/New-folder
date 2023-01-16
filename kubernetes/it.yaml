@@ -51,7 +51,7 @@ spec:
     spec:
       containers:
       - name: it-con
-        image: gautammandlik/it:tagname:latest
+        image: gautammandlik/it:latest
         ports:
         - containerPort: 8082
 
