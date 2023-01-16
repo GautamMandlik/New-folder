@@ -6,10 +6,9 @@ spec:
   selector:
     app: it
   ports:
-    - port: 8082
+    - port: 80
       targetPort: 8082
-  type: LoadBalancer
-
+  type: ClusterIP
 ---
 apiVersion: apps/v1
 kind: Deployment
