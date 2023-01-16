@@ -52,6 +52,6 @@ spec:
     spec:
       containers:
       - name: developer-con
-        image: thetips4you/stockmanager:latest
+        image: gautammandlik/developer:tagname:latest
         ports:
         - containerPort: 8080
