@@ -52,6 +52,6 @@ spec:
     spec:
       containers:
       - name: developer-con
-        image: gautammandlik/developer:tagname:latest
+        image: gautammandlik/developer:latest
         ports:
         - containerPort: 8080
