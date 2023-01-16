@@ -1,3 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: developer-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - http:
+      paths:
+        - path: /developer
+          backend:
+            serviceName: developer-service
+            servicePort: 8080
+        - path: /developer
+          backend:
+            serviceName: developer-service
+            servicePort: 8080
+
 ---
 apiVersion: v1
 kind: Service
